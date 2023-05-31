@@ -4,14 +4,113 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>E-commerce</title>
+        <title>Cara E-commerce</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/shop.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
     </head>
 
     <body>
-        <script src="script.js"></script>
+        <header id="header"></header>
+
+        <section id="page-header" class="contact-header">
+            <h2>#Let's_talk</h2>
+            <p>LEAVE A MESSAGE. We love to hear from you!</p>
+        </section>
+
+        <section id="contact-details" class="section-p1">
+            <div class="details">
+                <span>get in touch</span>
+                <h2>Visit one of our agency locations or contact us today</h2>
+                <h3>Head Office</h3>
+                <div class="contact-info">
+                    <li>
+                        <i class="fa-regular fa-map"></i>
+                        <p>56 glassford street glassgow g1 1UL new york</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>contact@gmail.com</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>0987654321</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday to Saturday: 9:00am to 16:00pm</p>
+                    </li>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.292638171745!2d105.78486297539641!3d20.98090348065648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1685533667847!5m2!1svi!2s"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </section>
+
+        <section id="form-details">
+            <form action="">
+                <span>leave message</span>
+                <h2>We love to hear from you</h2>
+                <input type="text" placeholder="Your Name" />
+                <input type="text" placeholder="E-mail" />
+                <input type="text" placeholder="Subject" />
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button class="normal">Submit</button>
+            </form>
+
+            <div class="people">
+                <div class="people-info">
+                    <img src="./img/people/1.png" alt="" />
+                    <p>
+                        <span>John Doe</span> Senior Marketing Manager <br />
+                        Phone: + 000 123 000 77 88 <br />
+                        Email: contact@gmail.com
+                    </p>
+                </div>
+                <div class="people-info">
+                    <img src="./img/people/2.png" alt="" />
+                    <p>
+                        <span>William Smith</span> Senior Marketing Manager <br />
+                        Phone: + 000 123 000 66 88 <br />
+                        Email: contact@gmail.com
+                    </p>
+                </div>
+                <div class="people-info">
+                    <img src="./img/people/3.png" alt="" />
+                    <p>
+                        <span>Emma Stone</span> Senior Marketing Manager <br />
+                        Phone: + 000 123 000 77 99 <br />
+                        Email: contact@gmail.com
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newtext">
+                <h4>sign up for newsletter</h4>
+                <p>get e-mail update about our latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your email address" />
+                <button class="normal">Sign up</button>
+            </div>
+        </section>
+
+        <footer id="footer" class="section-p1"></footer>
+
+        <script src="./js/navbar.js"></script>
+        <script src="./js/footer.js"></script>
     </body>
 </html>

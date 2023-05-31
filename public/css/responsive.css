@@ -102,6 +102,15 @@
     #newsletter .form {
         width: 70%;
     }
+
+    /* Contact page */
+    #form-details {
+        padding: 40px;
+    }
+
+    #form-details form {
+        width: 50%;
+    }
 }
 
 /* Mobile */
@@ -241,5 +250,35 @@
 
     #about-app .video {
         width: 100%;
+    }
+
+    /* Contact page */
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .contact-info p {
+        line-height: 2.2rem;
+    }
+
+    #contact-details .map {
+        width: 100%;
+    }
+
+    #form-details {
+        /* flex-direction: column; */
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
