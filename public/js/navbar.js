@@ -2,7 +2,7 @@ const createNavbar = () => {
     let nav = document.querySelector("#header");
 
     nav.innerHTML = `
-        <a href="#">
+        <a href="index.html">
             <img src="./img/logo.png" alt="" class="logo" />
         </a>
         <div class="wrapper">

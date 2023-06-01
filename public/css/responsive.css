@@ -281,4 +281,26 @@
         width: 100%;
         margin-bottom: 30px;
     }
+
+    /* Cart page */
+    #cart-add {
+        flex-direction: column;
+    }
+
+    #cart-add #coupon {
+        width: 100%;
+    }
+
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #coupon .form-group input {
+        width: 70%;
+    }
+
+    #subtotal button {
+        width: 100%;
+    }
 }

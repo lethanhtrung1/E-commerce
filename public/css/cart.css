@@ -1,0 +1,133 @@
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart .pro-img img {
+    width: 80px;
+}
+
+#cart table .remove {
+    width: 100px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#cart table .remove a {
+    display: inline-block;
+    padding: 15px;
+}
+
+#cart table .remove a i {
+    font-size: 1.6rem;
+    color: #222;
+    transition: 0.3s ease;
+}
+
+#cart table .remove a:hover i {
+    color: #ff6a5a;
+}
+
+#cart table .pro-img {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table .pro-title {
+    width: 250px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#cart table .price,
+#cart table .quantity,
+#cart table .subtotal {
+    width: 150px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#cart table .quantity input {
+    width: 70px;
+    font-size: 1.4rem;
+    padding: 10px 5px 10px 15px;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    outline: none;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem !important;
+    padding: 18px 0;
+}
+
+#cart .cart-box .product-item td {
+    padding-top: 15px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cart-add #coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+    font-size: 1.6rem;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+
+#coupon .form-group input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 12px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon .form-group button,
+#subtotal button {
+    color: #fff;
+    background-color: #ff6a5a;
+    padding: 12px 20px;
+}
+
+#subtotal {
+    width: 50%;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+}
+
+#subtotal table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+#subtotal table td {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: 1px solid #e2e9e1;
+}

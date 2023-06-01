@@ -116,6 +116,10 @@ body {
     transition: 0.3s ease;
 }
 
+.navbar li a i {
+    font-size: 1.8rem;
+}
+
 .navbar li a:hover,
 .navbar li a.active {
     color: #ff6a5a;
@@ -510,6 +514,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-top: 1px solid #e1e1e1;
+    background: #e3e6f3;
 }
 
 #footer .col {
