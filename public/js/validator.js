@@ -80,7 +80,7 @@ validator.minLength = (selector, minLength) => {
     return {
         selector: selector,
         test: function (value) {
-            return value.length >= minLength ? undefined : `Your password is too short. It must be at least ${minLength} characters long.`;
+            return value.length >= minLength ? undefined : `Your password is too short. Password must be at least ${minLength} characters.`;
         },
     };
 };
