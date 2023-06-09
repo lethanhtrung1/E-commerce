@@ -1,0 +1,213 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto 0;
+    min-height: 80vh;
+    width: 100%;
+    background-color: #ff6352;
+}
+
+.login-logo {
+    text-align: center;
+}
+
+.login-logo h2 {
+    color: #fff;
+}
+
+.login-logo p {
+    max-width: 500px;
+    color: #fff;
+    line-height: 2.4rem;
+}
+
+.form {
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form .desc {
+    letter-spacing: 2px;
+}
+
+.spacer {
+    margin-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-control {
+    padding: 8px 12px;
+    height: 38px;
+    border: 1px solid #b3b3b3;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+}
+
+.form-label {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #999;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+    max-width: 300px;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-submit {
+    margin-top: 20px;
+    color: #fff !important;
+    width: 100% !important;
+    background-color: #ff6a5a !important;
+}
+
+.form-submit:hover {
+    opacity: 0.9;
+}
+
+.form-control:not(:placeholder-shown) + .form-label,
+.form-control:focus + .form-label {
+    top: -8px;
+    left: 14px;
+    display: inline-block;
+    background-color: #fff;
+    color: #ff6a5a;
+}
+
+.req-pass {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.req-pass a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.or {
+    display: flex;
+    font-size: 1.3rem;
+    margin-top: 12px;
+    color: #333;
+}
+
+.or span {
+    padding: 0 16px;
+    font-size: 1.2rem;
+}
+
+.or > div {
+    margin-top: 8px;
+}
+
+.or div:first-child {
+    height: 1px;
+    width: 100%;
+    background-color: #dbdbdb;
+    flex: 1;
+}
+
+.or div:last-child {
+    height: 1px;
+    width: 100%;
+    background-color: #d0d0d0;
+    flex: 1;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.form-btn button {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 160px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.sign-in-btn:hover {
+    background-color: #fbfbfb;
+}
+
+.form-btn .sign-in-btn i {
+    font-size: 2.2rem;
+    margin-left: 4px;
+}
+
+.form-btn .sign-in-btn span {
+    margin-left: 10px;
+}
+
+.sign-in-with-google {
+    margin-left: 16px;
+}
+
+.sign-in-with-fb i {
+    color: #097deb;
+}
+
+.sign-in-with-google i {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55% / 150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.support {
+    margin-top: 16px;
+}
+
+.support a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
