@@ -212,9 +212,19 @@ body {
     text-decoration: none;
 }
 
+@media (max-width: 799px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .login-logo {
+        display: none;
+    }
+}
+
 @media (max-width: 477px) {
     .container {
-        min-height: 70vh;
+        /* min-height: 70vh; */
         flex-direction: column;
     }
 

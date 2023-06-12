@@ -21,7 +21,7 @@ function validator(options) {
             inputElement.parentElement.classList.remove("invalid");
         }
     }
-    let form = document.querySelector("#form-login");
+    let form = document.querySelector(options.form);
     if (form) {
         form.onsubmit = (e) => {
             e.preventDefault();
@@ -85,7 +85,22 @@ validator.minLength = (selector, minLength) => {
     };
 };
 
+validator.isPhone = (selector) => {
+    return {
+        selector: selector,
+        test: function (value) {
+            for (let i = 0; i < value.length; i++) {
+                if (value[i] == " ") {
+                    return "Phone number does not contain special characters and spaces";
+                }
+            }
+            if (value.length < 10) return "Phone number is required 10 digits";
+            return undefined;
+        },
+    };
+};
+
 validator({
-    // rules: [validator.isRequired(".email")],
+    form: "#form-login",
     rules: [validator.isRequired(".email"), validator.isEmail(".email"), validator.isRequired(".password"), validator.minLength(".password", 6)],
 });

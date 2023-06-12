@@ -11,7 +11,31 @@
         <link rel="stylesheet" href="css/responsive.css" />
     </head>
     <body>
-        <header id="header"></header>
+        <header id="header">
+            <!-- <a href="index.html">
+                <img src="./img/logo.png" alt="" class="logo" />
+            </a>
+            <div class="wrapper">
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-item">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+                    <i class="close fa-solid fa-xmark" onclick="hideMenuMobile()"></i>
+                </ul>
+            </div>
+            <div class="mobile">
+                <i class="cart-icon fa-solid fa-bag-shopping"></i>
+                <i class="menu-icon fa-solid fa-outdent" onclick="showMenuMobile()"></i>
+            </div> -->
+        </header>
 
         <div class="container">
             <div class="login-logo">
@@ -81,6 +105,23 @@
 
         <script src="./js/navbar.js"></script>
         <script src="./js/footer.js"></script>
+        <script src="./js/script.js"></script>
         <script src="./js/validator.js"></script>
+
+        <script>
+            validator({
+                form: "#form-signup",
+                rules: [
+                    validator.isRequired("#email"),
+                    validator.isEmail("#email"),
+                    validator.isRequired("#phone-number"),
+                    validator.isPhone("#phone-number"),
+                    validator.isRequired("#password"),
+                    validator.minLength("#password"),
+                    validator.isRequired("#repeat-password"),
+                    validator.minLength("#repeat-password"),
+                ],
+            });
+        </script>
     </body>
 </html>
